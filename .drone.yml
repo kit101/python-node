@@ -1,0 +1,15 @@
+type: docker
+name: build
+kind: pipeline
+
+steps:
+- name: publish/pig-gateway
+  image: plugins/docker
+  pull: if-not-exists
+  settings:
+    repo: kit101z/python-node
+    auto_tag: true
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
