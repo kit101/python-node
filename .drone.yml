@@ -3,9 +3,9 @@ name: build
 kind: pipeline
 
 steps:
-- name: publish/pig-gateway
+- name: publish
   image: plugins/docker
-  pull: if-not-exists
+  pull: always
   settings:
     repo: kit101z/python-node
     auto_tag: true
