@@ -10,6 +10,6 @@ RUN mkdir -p /etc/apt/keyrings; \
     echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main"  > /etc/apt/sources.list.d/nodesource.list; \
     apt-get update;
 RUN apt-get install -y nodejs
-RUN which node
+RUN which node && node -v
 RUN npm install -g yarn cnpm
 RUN echo node `node -v` && echo npm `npm -v` && echo yarn `yarn -v` && python -V
