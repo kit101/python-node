@@ -1,4 +1,4 @@
-from python:3.7
+from python:2.7
 
 LABEL maintainer="kit101 <qkssk1711@163.com>"
 
