@@ -2,8 +2,8 @@ from python:3.7
 
 LABEL maintainer="kit101 <qkssk1711@163.com>"
 
-ARG NODE_MAJOR=16
-ARG NODE_VERSION=16.20.2
+ARG NODE_MAJOR=18
+ARG NODE_VERSION=18.20.4
 
 RUN apt-get update && apt-get install -y ca-certificates curl gnupg
 RUN mkdir -p /etc/apt/keyrings; \
